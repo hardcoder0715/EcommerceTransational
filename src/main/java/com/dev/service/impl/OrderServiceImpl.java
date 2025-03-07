@@ -24,6 +24,7 @@ public class OrderServiceImpl implements OrderService {
 	@Autowired
 	public OrderServiceImpl(OrderRepository orderRepository, PaymentRepository paymentRepository) {
 		super();
+		System.out.println("this is payment repo");
 		this.orderRepository = orderRepository;
 		this.paymentRepository = paymentRepository;
 	}

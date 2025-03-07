@@ -24,6 +24,7 @@ public class OrderController {
 
 
 	@PostMapping
+// this is post mapping 
 	public ResponseEntity<OrderResponce> placeOrder(@RequestBody OrderRequest orderRequest){
 		
 		return ResponseEntity.ok(orderService.placeOrder(orderRequest));
